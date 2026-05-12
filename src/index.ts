@@ -7,6 +7,7 @@ async function main(): Promise<void> {
   const config = loadConfig(process.argv.slice(2));
   const workbook = new ExcelPhoneWorkbook(config);
   const { pendingRows, totalDataRows, sheetName } = await workbook.load();
+console.log("bla");
 
   console.log(`Feuille utilisee: ${sheetName}`);
   console.log(`Lignes de donnees detectees: ${totalDataRows}`);
