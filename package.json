@@ -1,0 +1,23 @@
+{
+  "name": "google-maps-phone-enricher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enrichit un fichier Excel avec des numeros de telephone trouves via Google Maps.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "playwright": "^1.54.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
